@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8"/>
+        <title>PIXELWARS</title>
+        <link rel="stylesheet" href="./styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        <section id = 'seleccionar-elementor'>
+            <h1 id= 'title'class='title'>PixelWars</h1>
+            <h2 class='subtitulo'>Select your character</h2>
+            
+            <div id='contenedor-tarjetas'class='tarjetas'>
+                
+            </div>
+
+            
+
+            <button id = 'boton-elementor'>Select</button>
+        </section>
+
+        <section id ='ver-mapa'>
+            <h2 class='subtitulo'>Walk the map with your elementor</h2>
+            <canvas id ='mapa'></canvas>
+                <button onpointerup = 'detenerMovimiento()'onpointerdown = 'moverArriba()'>↑</button>
+            <div>
+                <button onpointerup = 'detenerMovimiento()'onpointerdown = 'moverIzquierda()'>←</button>
+                <button onpointerup = 'detenerMovimiento()'onpointerdown = 'moverAbajo()'>↓</button>
+                <button onpointerup = 'detenerMovimiento()'onpointerdown = 'moverDerecha()'>→</button>   
+            </div>
+        </section>
+
+        <section id = 'seleccionar-ataque'>
+            
+            <h1 id= 'title'class='title'>PixelWars</h1>
+
+            <h2 class='subtitulo'>Select your attack ⚔</h2>
+            
+            <div id = 'contenedor-ataques'class = 'tarjetas-ataques'>
+
+            </div>
+            <div>
+                <div id ='mensajes'>
+                    <p id ='resultado'>Good Luck!</p>
+                    
+                    <section id="reiniciar">
+                        <button id = 'boton-reiniciar'>Restart</button>
+                    </section>
+                </div>
+            <div class = 'ataques'>
+                <div class='ataques-jugador'>
+                    <p id = 'victorias-jugador'>0</p>
+                    <p id ='elementor-jugador'>(Select your character)</p>
+                    <div id ='ataque-jugador'></div>
+                </div>
+                <div class='ataques-enemigo'>
+                    <p id = 'victorias-enemigo'>0</p>
+                    <p id = 'elementor-enemigo'></p>
+                    <div id ='ataque-enemigo'></div>
+                </div>
+            </div>
+            
+        </section>    
+        <script src = "./Elementors.js"></script>         
+    </body>
+</html>
